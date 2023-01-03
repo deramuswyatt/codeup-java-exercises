@@ -24,11 +24,16 @@ public class ConsoleExercises {
 //        System.out.println("You wrote: " + userInput2);
 
         Scanner area = new Scanner(System.in);
+        area.useDelimiter("\n");
         System.out.println("What is the length of your room? ");
-        double len = area.nextDouble();
+        float len = area.nextFloat();
         System.out.println("What is the width of your room? ");
-        double wid = area.nextDouble();
-        System.out.println("Your area is: " + (len * wid) + "ft.");
-        System.out.println("Your perimeter is: " + (len * 2) + (wid * 2) + "ft.");
+        float wid = area.nextFloat();
+        System.out.println("What is the height of your room?");
+        float hei = area.nextFloat();
+        System.out.println("The area of your room is: " + (len * wid) + "ft.");
+        System.out.println("The perimeter of your room  is: " + (2*(len + wid)) + "ft.");
+        System.out.println("The volume of your room is: " + (wid * hei * len) + "ft.");
+
     }
 }
