@@ -15,7 +15,7 @@ public class Bob {
         } else if (userInput.contains("t")) {
             System.out.println("you got it Wyatt.");
         } else {
-            System.out.println("whateva");
+            System.out.println("whatever");
         }
     }
 }
